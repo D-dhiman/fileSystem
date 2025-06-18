@@ -15,10 +15,10 @@ app.use('/', bookRoutes);  // This handles /search and /:id
 
 // MongoDB connection
 mongoose.connect('mongodb://localhost:27017/library')
-  .then(() => console.log('📦 Connected to MongoDB'))
-  .catch(err => console.error('❌ MongoDB connection error:', err));
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 // Start the server
 app.listen(3000, () => {
-  console.log("✅ Server running on http://localhost:3000");
+  console.log("Server running on http://localhost:3000");
 });
